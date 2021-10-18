@@ -16,7 +16,12 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         brightness: Brightness.dark,
-        primaryColorDark: Colors.purple
+        primaryColor: Colors.purpleAccent,
+        primarySwatch: Colors.purple,
+        fontFamily: 'Yeon Sung',
+        textTheme:  const TextTheme(
+          button: TextStyle(fontSize: 20)
+        )
       ),
       home: HomeView(),
     );
